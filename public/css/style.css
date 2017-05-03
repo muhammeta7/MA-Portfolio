@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,800|Lora:400italic|Playfair+Display:700);
 html,
 body,
-.cross-portfolio,
+.portfolio,
 .bg {
   height: 100%;
   margin: 0;
@@ -145,11 +145,11 @@ ul.menu-click {
   cursor: pointer;
 }
 
-.cross-portfolio.modify #nav-icon {
+.portfolio.modify #nav-icon {
   z-index: 1000;
 }
 
-.cross-portfolio.modify #nav-icon span {
+.portfolio.modify #nav-icon span {
   background: #444;
 }
 
@@ -188,7 +188,7 @@ ul.menu-click {
   top: 20px;
 }
 
-.cross-portfolio.modify #nav-icon.open span {
+.portfolio.modify #nav-icon.open span {
   background: #fff;
 }
 
@@ -249,7 +249,7 @@ ul.menu-click {
   margin: 0 auto;
 }
 
-.cross-portfolio .big-title {
+.portfolio .big-title {
   -webkit-transition: opacity 0.2s ease-in;
   -moz-transition: opacity 0.2s ease-in;
   -o-transition: opacity 0.2s ease-in;
@@ -257,11 +257,62 @@ ul.menu-click {
   transition: opacity 0.2s ease-in;
 }
 
-.cross-portfolio.modify .big-title {
+.portfolio.modify .big-title {
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-out;
   -moz-transition: opacity 0.2s ease-out;
   -o-transition: opacity 0.2s ease-out;
   -ms-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
+}
+
+/* Common Style */
+.cross-top {
+  width: 100%;
+  z-index: 10000;
+}
+
+.cross-top a {
+  display: inline-block;
+  color: #fff;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.cross-top .logo {
+  position: fixed;
+  left: 0;
+  padding: 0 25px;
+}
+
+.logo {
+  text-align: left;
+  font-weight: bold;
+  display: -moz-inline-stack;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  float: left !important;
+  color: #fff;
+  position: relative;
+}
+
+.logo > span {
+  display: -moz-inline-stack;
+  display: inline-block;
+  float: left;
+  border: 2px solid #fff;
+  padding: 7px 10px 7px 12px;
+}
+
+.logo:hover {
+  color: #fff;
+  opacity: .8;
+}
+
+.avatar {
+  text-align: center;
+  width: 100%;
+  height: auto;
 }
