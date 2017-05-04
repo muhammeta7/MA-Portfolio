@@ -775,3 +775,8 @@ figure.cross-image:hover p {
   transform: translate3d(0, 0, 0);
 }
 
+/* Footer */
+
+#footer {
+  padding-top: 15px;
+}
