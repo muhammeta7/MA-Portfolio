@@ -70,7 +70,7 @@
     isRevealed,
     noscroll,
     isAnimating,
-    container = document.getElementById('portfolio'),
+    container = document.getElementById('cross-portfolio'),
     trigger = container.querySelector('button.trigger');
 
   function scrollY() {
@@ -143,7 +143,7 @@
 
   // Typed Js
   $(".element").typed({
-    strings: ["I'm a Web Developer", "I'm a Web Designer"],
+    strings: ["I'm Web Developer", "I'm Web Designer"],
     typeSpeed: 1,
     backSpeed: 1,
     backDelay: 1000,
@@ -151,7 +151,7 @@
   });
 
   $(".sub-title").typed({
-    strings: ["a Web Developer", "a Web Designer"],
+    strings: ["Web Developer", "Web Designer"],
     typeSpeed: 1,
     backSpeed: 1,
     backDelay: 1400,

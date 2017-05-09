@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,800|Lora:400italic|Playfair+Display:700);
 html,
 body,
-.portfolio,
+.cross-portfolio,
 .bg {
   height: 100%;
   margin: 0;
@@ -18,7 +18,9 @@ body {
   overflow-x: hidden;
 }
 
-/* Common CSS */
+
+/* Common css */
+
 a {
   outline: none;
   color: #cf4a5c;
@@ -35,6 +37,7 @@ hr {
   background-color: transparent;
   border-top: 2px dashed #8c8b8b;
 }
+
 
 /* Preloader */
 
@@ -75,6 +78,7 @@ hr {
   text-transform: uppercase;
   margin-top: 15px;
 }
+
 
 /* Navigation Style */
 
@@ -145,11 +149,11 @@ ul.menu-click {
   cursor: pointer;
 }
 
-.portfolio.modify #nav-icon {
+.cross-portfolio.modify #nav-icon {
   z-index: 1000;
 }
 
-.portfolio.modify #nav-icon span {
+.cross-portfolio.modify #nav-icon span {
   background: #444;
 }
 
@@ -188,7 +192,7 @@ ul.menu-click {
   top: 20px;
 }
 
-.portfolio.modify #nav-icon.open span {
+.cross-portfolio.modify #nav-icon.open span {
   background: #fff;
 }
 
@@ -217,6 +221,7 @@ ul.menu-click {
   width: 0%;
   left: 50%;
 }
+
 
 /* Big title stye */
 
@@ -249,7 +254,7 @@ ul.menu-click {
   margin: 0 auto;
 }
 
-.portfolio .big-title {
+.cross-portfolio .big-title {
   -webkit-transition: opacity 0.2s ease-in;
   -moz-transition: opacity 0.2s ease-in;
   -o-transition: opacity 0.2s ease-in;
@@ -257,7 +262,7 @@ ul.menu-click {
   transition: opacity 0.2s ease-in;
 }
 
-.portfolio.modify .big-title {
+.cross-portfolio.modify .big-title {
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-out;
   -moz-transition: opacity 0.2s ease-out;
@@ -266,20 +271,22 @@ ul.menu-click {
   transition: opacity 0.2s ease-out;
 }
 
-/* Common Style */
-.top {
+
+/* Common style */
+
+.cross-top {
   width: 100%;
   z-index: 10000;
 }
 
-.top a {
+.cross-top a {
   display: inline-block;
   color: #fff;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
 }
 
-.top .logo {
+.cross-top .logo {
   position: fixed;
   left: 0;
   padding: 0 25px;
@@ -317,53 +324,102 @@ ul.menu-click {
   height: auto;
 }
 
+
+/* Google Map */
+
+.gmap {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.gmap_image img {
+  max-width: 100%;
+}
+
+.text-weight {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.social li a {
+  background: #444444;
+  text-align: center;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.25em;
+  color: #FFF;
+  border-radius: 25px;
+}
+
+.social li a:hover {
+  background: #cf4a5c;
+}
+
+.space {
+  margin-bottom: 40px;
+}
+
+
 /* Intro Start */
 
-.portfolio:not(.notrans) .bg-img::before {
+.cross-portfolio:not(.notrans) .bg-img::before {
   -webkit-transition-property: background-color;
   transition-property: background-color;
 }
 
-.portfolio:not(.notrans) .bg-img::after {
+.cross-portfolio:not(.notrans) .bg-img::after {
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
 }
 
-.portfolio:not(.notrans) .content > div {
+.cross-portfolio:not(.notrans) .content > div {
   -webkit-transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
 
-.portfolio:not(.notrans) .bg-img::before,
-.portfolio:not(.notrans) .bg-img::after,
-.portfolio:not(.notrans) .content > div {
+.cross-portfolio:not(.notrans) .bg-img::before,
+.cross-portfolio:not(.notrans) .bg-img::after,
+.cross-portfolio:not(.notrans) .content > div {
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
-.portfolio .bg {
+.cross-portfolio .bg {
   position: absolute;
 }
 
-.portfolio .bg-img {
+.cross-portfolio .bg-img {
   position: fixed;
 }
 
-.portfolio .bg-img img {
+.cross-portfolio .bg-img img {
   left: auto;
   right: 0;
 }
 
-.portfolio .bg-img::before,
-.portfolio .bg-img::after {
+.cross-portfolio .bg-img::before,
+.cross-portfolio .bg-img::after {
   content: '';
   position: absolute;
   z-index: 100;
 }
 
-.portfolio .bg-img::after {
+.cross-portfolio .bg-img::after {
   background: #fff;
   top: 0;
   right: 0;
@@ -373,37 +429,37 @@ ul.menu-click {
   transform: translateX(100%);
 }
 
-.portfolio.modify .bg-img::after {
+.cross-portfolio.modify .bg-img::after {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
-.portfolio .bg-img::before {
+.cross-portfolio .bg-img::before {
   width: 100%;
   height: 100%;
   background-color: rgba(79, 77, 77, 0.44);
 }
 
-.portfolio.modify .bg-img::before {
+.cross-portfolio.modify .bg-img::before {
   background-color: rgba(97, 62, 63, 0.4);
 }
 
-.portfolio .title h1 {
+.cross-portfolio .title h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 4em;
 }
 
-.portfolio .content {
+.cross-portfolio .content {
   width: 60%;
   margin-left: 40%;
   padding: 2em 1em;
   position: relative;
 }
 
-.portfolio div.content:nth-child(odd),
-.portfolio div.content:nth-child(5),
-.portfolio div.content:nth-child(11) {
+.cross-portfolio div.content:nth-child(odd),
+.cross-portfolio div.content:nth-child(5),
+.cross-portfolio div.content:nth-child(11) {
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-out;
   -moz-transition: opacity 0.2s ease-out;
@@ -412,7 +468,7 @@ ul.menu-click {
   transition: opacity 0.2s ease-out;
 }
 
-.portfolio.modify div.content:nth-child(odd) { /* Change div content color odd */
+.cross-portfolio.modify div.content:nth-child(odd) { /* Change div content color odd */
   opacity: 1;
   background: #f3f3f3;
   -webkit-transition: opacity 0.6s ease-in;
@@ -422,25 +478,25 @@ ul.menu-click {
   transition: opacity 0.6s ease-in;
 }
 
-.portfolio.modify div.content:nth-child(odd) small{
+.cross-portfolio.modify div.content:nth-child(odd) small{
   color: inherit;
 }
 
-.portfolio.modify div.content:nth-child(5) { /* Update 1.1 : Change div content 5 to parallax image */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/portfolio2.jpg');
+.cross-portfolio.modify div.content:nth-child(5) { /* Update 1.1 : Change div content 5 to parallax image */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg640x413.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.portfolio.modify div.content:nth-child(5) .h2,
-.portfolio.modify div.content:nth-child(5) h5 {
+.cross-portfolio.modify div.content:nth-child(5) .h2,
+.cross-portfolio.modify div.content:nth-child(5) h5 {
   font-family: sans-serif;
   color: #fff;
 }
 
-.portfolio.modify div.content:nth-child(11) { /* Change footer color */
+.cross-portfolio.modify div.content:nth-child(11) { /* Change footer color */
   opacity: 1;
   background: #444;
   color: #fff;
@@ -451,18 +507,18 @@ ul.menu-click {
   transition: opacity 0.6s ease-in;
 }
 
-.portfolio.modify div.content:nth-child(11) h3,
-.portfolio.modify div.content:nth-child(11) p {
+.cross-portfolio.modify div.content:nth-child(11) h3,
+.cross-portfolio.modify div.content:nth-child(11) p {
   color: #fff;
 }
 
-.portfolio .content .containers {
+.cross-portfolio .content .containers {
   opacity: 0;
   -webkit-transform: translateY(200px);
   transform: translateY(200px);
 }
 
-.portfolio.modify .content .containers {
+.cross-portfolio.modify .content .containers {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -471,20 +527,20 @@ ul.menu-click {
 
 /* Delays */
 
-.portfolio:not(.notrans) .bg-img::before,
-.portfolio:not(.notrans) .bg-img::after,
-.portfolio.modify div.content:nth-child(odd) {
+.cross-portfolio:not(.notrans) .bg-img::before,
+.cross-portfolio:not(.notrans) .bg-img::after,
+.cross-portfolio.modify div.content:nth-child(odd) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
 
-.portfolio.modify:not(.notrans) .bg-img::before,
-.portfolio.modify:not(.notrans) .bg-img::after {
+.cross-portfolio.modify:not(.notrans) .bg-img::before,
+.cross-portfolio.modify:not(.notrans) .bg-img::after {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
-.portfolio.modify:not(.notrans) .content .containers {
+.cross-portfolio.modify:not(.notrans) .content .containers {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
@@ -526,7 +582,9 @@ ul.menu-click {
   margin: 0 auto 1.5em 0.8em;
 }
 
+
 /* Trigger Button */
+
 button.trigger {
   position: fixed;
   bottom: 40px;
@@ -544,12 +602,12 @@ button.trigger {
   cursor: pointer;
 }
 
-.portfolio:not(.notrans) button.trigger {
+.cross-portfolio:not(.notrans) button.trigger {
   -webkit-transition: opacity 0.3s 0.5s;
   transition: opacity 0.3s 0.5s;
 }
 
-.portfolio.modify:not(.notrans) button.trigger {
+.cross-portfolio.modify:not(.notrans) button.trigger {
   opacity: 0;
   z-index: 0;
   -webkit-transition-delay: 0s;
@@ -601,6 +659,7 @@ button.trigger i::before {
 .hvr-grow-shadow:hover h5 {
   color: #cf4a5c;
 }
+
 
 /* Icon list */
 
@@ -775,8 +834,243 @@ figure.cross-image:hover p {
   transform: translate3d(0, 0, 0);
 }
 
-/* Footer */
 
-#footer {
-  padding-top: 15px;
+/* Testimonial-slider */
+/*
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote img {
+  margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+
+.item blockquote p:after {
+  content: "\f10e";
+  font-family: 'Fontawesome';
+  margin-left: 10px;
+}*/
+
+
+/* Footer logo */
+
+.footer-logo {
+  text-align: left;
+  font-weight: bold;
+  display: -moz-inline-stack;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.footer-logo > span {
+  display: -moz-inline-stack;
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 7px 10px 7px 12px;
+}
+
+.footer-logo:hover {
+  color: #fff;
+  opacity: .8;
+}
+
+.img-circle {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* Modal fullscreen - Update 1.1 : change to invidual project details modal */
+
+body.modal-open .cross-portfolio {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.fullscreen .modal-dialog {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+}
+
+.fullscreen .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  min-height: 160%;
+  padding: 100px 0;
+  text-align: center
+}
+
+.fullscreen .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em
+}
+
+.fullscreen .modal-content p {
+  margin-bottom: 30px
+}
+
+.fullscreen .modal-content img {
+  margin-bottom: 30px
+}
+
+.fullscreen .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer
+}
+
+.fullscreen .close-modal:hover {
+  opacity: .3
+}
+
+.fullscreen .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 1051
+}
+
+.fullscreen .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  z-index: 1052
+}
+
+.fullscreen .img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 80em) {
+  figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+/* Update 1.1 : add responsive font */
+  #count .h2{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .title,
+  .cross-portfolio {
+    font-size: 90%;
+  }
+
+  .cross-portfolio .content {
+    width: 95%;
+    margin-left: 5%;
+    padding: 2em 1em 2em 0;
+  }
+
+  .cross-portfolio.modify .cross-top .logo {
+    opacity: 0;
+  }
+
+  .cross-portfolio .bg-img::after {
+    width: 95%;
+  }
+
+  figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+/* Update 1.1 : add responsive font */
+  #count .h2{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 27em) {
+  .cross-portfolio .bg-img::after {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  .containers {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .cross-portfolio.modify .cross-top .logo {
+    opacity: 0;
+  }
+
+  .cross-portfolio .content {
+    width: 100%;
+    margin-left: 0;
+    padding: 2em 0;
+  }
+
+  .cross-portfolio .content p {
+    font-size: 14px;
+  }
+
+  .cross-portfolio .title h1 {
+    font-size: 38px;
+  }
+
+  .cross-portfolio .content h2 {
+    font-size: 28px;
+  }
+
+  .cross-portfolio .content h3 {
+    font-size: 24px;
+  }
+
+  .cross-portfolio .content h4 {
+    font-size: 18px;
+  }
+
+  .menu-click li a {
+    font-size: 40px;
+    line-height: 68px;
+  }
 }
