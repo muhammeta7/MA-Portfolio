@@ -865,6 +865,9 @@ figure.cross-image:hover p {
 }*/
 
 /* Footer logo */
+.footer-text {
+  padding-top: 15px;
+}
 
 .footer-logo {
   text-align: left;
