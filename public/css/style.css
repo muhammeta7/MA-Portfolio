@@ -1,4 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,800|Lora:400italic|Playfair+Display:700);
+@import url(
+  http://fonts.googleapis.com/css?family=Raleway:400,
+  300,
+  800|Lora:400italic|Playfair + Display:700
+);
 html,
 body,
 .cross-portfolio,
@@ -13,11 +17,10 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-
 
 /* Common css */
 
@@ -37,7 +40,6 @@ hr {
   background-color: transparent;
   border-top: 2px dashed #8c8b8b;
 }
-
 
 /* Preloader */
 
@@ -79,7 +81,6 @@ hr {
   margin-top: 15px;
 }
 
-
 /* Navigation Style */
 
 #menu-overlay {
@@ -90,11 +91,11 @@ hr {
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: all .6s;
-  -moz-transition: all .6s;
-  -ms-transition: all .6s;
-  -o-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 #menu-overlay.menu-show {
@@ -142,10 +143,10 @@ ul.menu-click {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -173,10 +174,10 @@ ul.menu-click {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 #nav-icon span:nth-child(1) {
@@ -221,7 +222,6 @@ ul.menu-click {
   width: 0%;
   left: 50%;
 }
-
 
 /* Big title stye */
 
@@ -271,7 +271,6 @@ ul.menu-click {
   transition: opacity 0.2s ease-out;
 }
 
-
 /* Common style */
 
 .cross-top {
@@ -315,15 +314,15 @@ ul.menu-click {
 
 .logo:hover {
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .avatar {
   text-align: center;
   width: 100%;
   height: auto;
+  margin-bottom: 25px;
 }
-
 
 /* Google Map */
 
@@ -360,7 +359,7 @@ ul.menu-click {
   height: 40px;
   line-height: 40px;
   font-size: 1.25em;
-  color: #FFF;
+  color: #fff;
   border-radius: 25px;
 }
 
@@ -368,10 +367,9 @@ ul.menu-click {
   background: #cf4a5c;
 }
 
-.space {
-  margin-bottom: 40px;
+.about-me {
+  margin-bottom: 25px;
 }
-
 
 /* Intro Start */
 
@@ -414,7 +412,7 @@ ul.menu-click {
 
 .cross-portfolio .bg-img::before,
 .cross-portfolio .bg-img::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 100;
 }
@@ -445,7 +443,7 @@ ul.menu-click {
 }
 
 .cross-portfolio .title h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 4em;
 }
@@ -468,7 +466,8 @@ ul.menu-click {
   transition: opacity 0.2s ease-out;
 }
 
-.cross-portfolio.modify div.content:nth-child(odd) { /* Change div content color odd */
+.cross-portfolio.modify div.content:nth-child(odd) {
+  /* Change div content color odd */
   opacity: 1;
   background: #f3f3f3;
   -webkit-transition: opacity 0.6s ease-in;
@@ -478,12 +477,14 @@ ul.menu-click {
   transition: opacity 0.6s ease-in;
 }
 
-.cross-portfolio.modify div.content:nth-child(odd) small{
+.cross-portfolio.modify div.content:nth-child(odd) small {
   color: inherit;
 }
 
-.cross-portfolio.modify div.content:nth-child(5) { /* Update 1.1 : Change div content 5 to parallax image */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/technology.jpg');
+.cross-portfolio.modify div.content:nth-child(5) {
+  /* Update 1.1 : Change div content 5 to parallax image */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/technology.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -496,7 +497,8 @@ ul.menu-click {
   color: #fff;
 }
 
-.cross-portfolio.modify div.content:nth-child(11) { /* Change footer color */
+.cross-portfolio.modify div.content:nth-child(11) {
+  /* Change footer color */
   opacity: 1;
   background: #444;
   color: #fff;
@@ -523,7 +525,6 @@ ul.menu-click {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-
 
 /* Delays */
 
@@ -582,7 +583,6 @@ ul.menu-click {
   margin: 0 auto 1.5em 0.8em;
 }
 
-
 /* Trigger Button */
 
 button.trigger {
@@ -621,7 +621,7 @@ button.trigger::before {
   padding: 0.8em;
   width: 300%;
   color: #fff;
-  content: 'View Profile';
+  content: "View Profile";
   font-size: 0.35em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -660,7 +660,6 @@ button.trigger i::before {
   color: #cf4a5c;
 }
 
-
 /* Icon list */
 
 .icon-list {
@@ -679,7 +678,7 @@ button.trigger i::before {
   vertical-align: middle;
   width: 40px;
   font-size: 22px;
-  line-height: .5;
+  line-height: 0.5;
   color: #444444;
 }
 
@@ -712,7 +711,6 @@ button.trigger i::before {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
 }
-
 
 /* Work Image */
 
@@ -784,9 +782,17 @@ figure.cross-image figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
-  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
-  content: '';
+  background: -webkit-linear-gradient(
+    top,
+    rgba(72, 76, 97, 0) 0%,
+    rgba(72, 76, 97, 0.8) 75%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(72, 76, 97, 0) 0%,
+    rgba(72, 76, 97, 0.8) 75%
+  );
+  content: "";
   opacity: 0;
   -webkit-transform: translate3d(0, 50%, 0);
   transform: translate3d(0, 50%, 0);
@@ -834,7 +840,6 @@ figure.cross-image:hover p {
   transform: translate3d(0, 0, 0);
 }
 
-
 /* Testimonial-slider */
 /*
 .item blockquote {
@@ -858,7 +863,6 @@ figure.cross-image:hover p {
   font-family: 'Fontawesome';
   margin-left: 10px;
 }*/
-
 
 /* Footer logo */
 
@@ -884,14 +888,13 @@ figure.cross-image:hover p {
 
 .footer-logo:hover {
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .img-circle {
   width: 100px;
   height: 100px;
 }
-
 
 /* Modal fullscreen - Update 1.1 : change to invidual project details modal */
 
@@ -919,20 +922,20 @@ body.modal-open .cross-portfolio {
   border: 0;
   min-height: 160%;
   padding: 100px 0;
-  text-align: center
+  text-align: center;
 }
 
 .fullscreen .modal-content h2 {
   margin-bottom: 15px;
-  font-size: 3em
+  font-size: 3em;
 }
 
 .fullscreen .modal-content p {
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .fullscreen .modal-content img {
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .fullscreen .close-modal {
@@ -942,11 +945,11 @@ body.modal-open .cross-portfolio {
   background-color: transparent;
   top: 25px;
   right: 25px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .fullscreen .close-modal:hover {
-  opacity: .3
+  opacity: 0.3;
 }
 
 .fullscreen .close-modal .lr {
@@ -957,7 +960,7 @@ body.modal-open .cross-portfolio {
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  z-index: 1051
+  z-index: 1051;
 }
 
 .fullscreen .close-modal .lr .rl {
@@ -967,7 +970,7 @@ body.modal-open .cross-portfolio {
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
-  z-index: 1052
+  z-index: 1052;
 }
 
 .fullscreen .img-responsive {
@@ -984,8 +987,8 @@ body.modal-open .cross-portfolio {
     margin: 10px auto;
     width: 100%;
   }
-/* Update 1.1 : add responsive font */
-  #count .h2{
+  /* Update 1.1 : add responsive font */
+  #count .h2 {
     font-size: 30px;
   }
 }
@@ -1016,8 +1019,8 @@ body.modal-open .cross-portfolio {
     margin: 10px auto;
     width: 100%;
   }
-/* Update 1.1 : add responsive font */
-  #count .h2{
+  /* Update 1.1 : add responsive font */
+  #count .h2 {
     font-size: 25px;
   }
 }
