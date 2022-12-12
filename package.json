@@ -4,7 +4,7 @@
   "description": "heroku app: https://muhammetaydin.herokuapp.com/",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.17.3"
   },
   "devDependencies": {},
   "scripts": {
